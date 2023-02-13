@@ -60,8 +60,6 @@ def play_game():
     while dealer_score != 0 and dealer_score < 17:
         dealer_cards.append(deal_card())
         dealer_score = calculate_score(dealer_cards)
-    print(user_cards)
-    print(dealer_cards)
     print(compare(user_score, dealer_score))
 
 while input("Do you want to play? Type 'y' or 'n': ") == 'y':
